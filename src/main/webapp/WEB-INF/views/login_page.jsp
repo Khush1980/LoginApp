@@ -7,7 +7,7 @@
 <title>JTD Spring MVC 4.2.1 and Spring Security 4.0.2 Login Example</title>
 
 
-<link rel="stylesheet" type="text/css" href="/JTDSpring4MVCLoginExample/src/main/resources/app.css" />
+<link rel="stylesheet" type="text/css" href="/LoginApp/src/main/resources/app.css" />
 
 
 
