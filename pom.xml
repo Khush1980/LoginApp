@@ -13,7 +13,7 @@
 	<groupId>LoginApp</groupId>
 	<artifactId>LoginApp</artifactId>
 	<packaging>war</packaging>
-	<version></version>
+	<version>1.0.0</version>
 	<name>LoginApp</name>
 	
 	
@@ -131,8 +131,9 @@
 	</dependencies>
 
 	<build>
+	<pluginManagement>
 		<plugins>
-
+<!-- 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -144,7 +145,20 @@
 					<showWarnings>true</showWarnings>
 					<showDeprecation>true</showDeprecation>
 				</configuration>
-			</plugin>
+			</plugin> -->
+			
+			
+			<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-war-plugin</artifactId>
+					<version>2.4</version>
+					<configuration>
+						<warSourceDirectory>src/main/webapp</warSourceDirectory>
+						<warName>LoginApp</warName>
+						<failOnMissingWebXml>false</failOnMissingWebXml>
+					</configuration>
+				</plugin>
+			
 			
 			
 			<plugin>
@@ -160,8 +174,10 @@
         </plugin> 
     </plugins> 
 			
-			
+		</pluginManagement>
+		<finalName>LoginApp</finalName>	
 		
 	</build>
+	
 
 </project>
